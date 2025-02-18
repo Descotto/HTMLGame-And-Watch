@@ -1,0 +1,47 @@
+img {
+    mix-blend-mode: multiply;
+}
+
+.gametitle {
+    text-align: center;
+    background-color: gray;
+    color: black;
+    font-size: 40px;
+}
+
+#gamescreen {
+    position: relative; 
+    width: 1300px; 
+    height: 600px; 
+    background-color: white; 
+}
+
+#gamescreen img {
+    position: absolute;
+}
+#p1 {
+    top: 450px;
+    left: 100px;
+}
+#p2 {
+    top: 460px;
+    left: 400px;
+}
+#p3 {
+    top: 455px;
+    left: 700px;
+}
+
+#amb {
+    top: 370px;
+    right: 200px;
+}
+
+
+#f1 {
+    top: 435px;
+    left: 150px;
+}
+
+
+
