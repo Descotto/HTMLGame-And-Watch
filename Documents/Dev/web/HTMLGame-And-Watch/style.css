@@ -19,6 +19,12 @@ img {
 #gamescreen img {
     position: absolute;
 }
+#floor {
+    top: 520px;
+    width: 1100px;
+    height: 130px;
+    
+}
 #p1 {
     top: 450px;
     left: 100px;
@@ -42,6 +48,102 @@ img {
     top: 435px;
     left: 150px;
 }
+#f5 {
+    top: 375px;
+    left: 200px;
+}
+#f6 {
+    top: 270px;
+    left: 240px;
+}
+#f7 {
+    top: 170px;
+    left: 300px;
+}
+#f8 {
+    top: 270px;
+    left: 360px;
+}
+#f9 {
+    top: 375px;
+    left: 400px;
+}
+#f13 {
+    top: 370px;
+    left: 500px;
+}
+#f14 {
+    top: 270px;
+    left: 550px;
+}
+#f15 {
+    top: 170px;
+    left: 600px;
+}
+#f16 {
+    top: 270px;
+    left: 660px;
+}
+#f17 {
+    top: 370px;
+    left: 720px;
+}
+#f21 {
+    top: 440px;
+    left: 740px;
+}
+#f22 {
+    top: 375px;
+    left: 790px;
+}
+#f23 {
+    top: 305px;
+    left: 820px;
+}
+#f24 {
+    top: 275px;
+    left: 870px;
+}
+#f25 {
+    top: 350px;
+    left: 920px;
+}
+#f29 {
+    top: 440px;
+    left: 450px;
+}
+#f33 {
+    top: 375px;
+    left: 120px;
+}
+#f34 {
+    top: 275px;
+    left: 80px;
+}
+#f35 {
+    top: 175px;
+    left: 50px;
+}
+#jumptop {
+    top: 130px;
+    left: 10px;
+}
+#jumpbottom {
+    top: 250px;
+    left: 20px;
+}
 
+.fire {
+    top: 0;
+    left: 3px;
+}
 
-
+.fall {
+    visibility: hidden;
+}
+.player {
+    visibility: hidden;
+}
+.fire {
+    visibility: hidden;
+}
