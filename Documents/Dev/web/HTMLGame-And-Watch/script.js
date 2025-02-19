@@ -3,7 +3,10 @@
 let POS1 = true;
 let POS2 = false;
 let POS3 = false;
-let lastPressTime = 0; // To track the time of the last key press
+let lastPressTime = 0; 
+
+let GameOver = false;
+let fails = 3;
 
 let GameStart = false;
 
@@ -138,21 +141,44 @@ function animateFall(animationSet, animationId) {
             animateFall(animation2, 2); 
         } else if (animationId === 1) {
             document.getElementById('fail1').style.visibility = 'visible';
-            setTimeout(jump, 1000);
+            if (!GameOver) {
+                handleMisses();
+                if (fails === 0) {
+                    GameOver = true;
+                    document.getElementById('gg').style.visibility = 'visible';
+                }
+                if (!GameOver) {setTimeout(jump, 1000);}
+            }
+            
         }
 
         if (animationId === 2 && POS2) {
             animateFall(animation3, 3); 
         } else if (animationId === 2) {
             document.getElementById('fail2').style.visibility = 'visible';
-            jump()
+            if (!GameOver) {
+                handleMisses();
+                if (fails === 0) {
+                    GameOver = true;
+                    document.getElementById('gg').style.visibility = 'visible';
+                }
+                if (!GameOver) {setTimeout(jump, 1000);}
+            }
         }
 
         if (animationId === 3 && POS3) {
             animateFall(animation4, 4);
         } else if (animationId === 3) {
             document.getElementById('fail3').style.visibility = 'visible';
-            jump()
+            if (!GameOver) {
+                handleMisses();
+                if (fails === 0) {
+                    GameOver = true;
+                    document.getElementById('gg').style.visibility = 'visible';
+                }
+                if (!GameOver) {setTimeout(jump, 1000);}
+                
+            }
         }
 
         if (animationId === 4) {
@@ -172,12 +198,17 @@ function animateFall(animationSet, animationId) {
 // SCORE CONTROLLER
 let scoreScreen = document.getElementById('score');
 let score = 0;
+let failcount = document.getElementById('failcount');
+let misses = 3;
 
 function addScore() {
     score++
-    scoreScreen.textContent = score;
+    scoreScreen.textContent = `Score: ${score}`;
 }
-
+function handleMisses() {
+    misses--;
+    failcount.textContent = `Misses: ${misses}`;
+}
 // Trigger
 
 let fallStart = document.getElementById('jumptop');

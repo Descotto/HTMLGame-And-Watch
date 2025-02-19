@@ -25,6 +25,17 @@ img {
     left: 850px;
     font-size: 40px;
 }
+#failcount {
+    position: absolute;
+    left: 300px;
+}
+#gg {
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    font-size: 60px;
+    visibility: hidden;
+}
 #welcome {
     position: absolute;
     top: 200px;
